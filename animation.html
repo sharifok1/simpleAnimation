@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body{
+    display: flex;
+    place-content:center;
+    background-color: rgb(17, 5, 5);
+} 
+a{
+    text-decoration: none;
+    width: 100px;
+    height: 3vh;
+    padding :10px 10px;
+    position: absolute;
+    background-image: linear-gradient(to left, rgb(49, 43, 43), #8e9797);
+    text-align: center;
+    color:white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+a:hover{
+    background-image: linear-gradient(to right, #312b2b, #8e9797);
+} 
+     @keyframes dropping{
+            0%{
+                background-color: red;
+                left: 260px;
+                top:0px;
+            }
+            20%{
+                background-color: yellow;
+                left:0px;
+                top:110px;
+            }
+            40%{
+                left: 260px;
+                top:220px;
+            }
+            80%{
+                background-color: #e4096f;
+                left: 520px;
+                top:110px;
+            }
+            100%{
+                background-color: chartreuse;
+                left: 260px;
+                top:0px;
+
+            }
+         }
+         @keyframes dropping2{
+            0%{
+                background-color: #051488;
+                left: 260px;
+                top:-150px;
+            }
+            20%{
+                background-color: yellow;
+                left:0px;
+                top:-30px;
+            }
+            40%{
+                left: 260px;
+                top:75px;
+            }
+            80%{
+                background-color: rgb(219, 8, 8);
+                left: 520px;
+                top:-30px;
+            }
+            100%{
+                background-color: darkred;
+                left: 260px;
+                top:-155px;
+
+            }
+         }
+    .stage{
+        margin-top:20%;
+        display: grid;
+        height:300px;
+        width: 600px;
+        background-color: #130e0c;
+        border: 2px solid #f30928;
+        box-shadow: 0 0 25px 8px #f7f4f1;
+    }
+    .ball{
+        height:80px;
+        position: relative;
+        width: 80px;
+        background: #022ce7;
+        border-radius: 50%;
+        animation: dropping 3s linear 0s infinite;
+    }
+    .ball2{
+        height:80px;
+        position: relative;
+        top:-80px;
+        width: 80px;
+        background: #e70202;
+        border-radius: 50%;
+        animation: dropping2 3s linear 1s infinite;
+    }
+
+</style>
+<body>
+    <div class="center">
+        <div class="stage">
+            <div class="ball"></div>
+            <div class="ball2"></div>
+    </div>
+    </div>  
+    <a href="index.html">Ball-bat</a> 
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        margin-left:20px ;
+        padding:5px;
+        background-image: linear-gradient(to left, #222, #d8d4d4);
+        border-radius: 5px;
+        width: 12vmax;
+        text-align: center;
+    }
+    li:hover{
+        background-image: linear-gradient(to left, #d8d4d4, #222);
+    }
+    li a{
+        text-decoration: none;
+        color:white;
+        font-weight: 600;
+    }
+    .field{
+        position:absolute
+        height: 
+        width: 100%;
+        border: 2px solid red;
+    }
+ img{
+    position: relative;
+    left: 55%;   
+    top:80px; 
+    width: 300px;
+}
+.ball{
+    position: relative;
+    border: 2px solid rgb(32, 185, 231);
+    left: 53%;
+    bottom:150px;
+    width: 35px;
+    height: 35px;
+    background-color: teal;
+    border-radius: 50%;
+    transition: transform .2s ease-in-out .19s ;
+
+   
+}
+#bat{
+    transition: transform .2s  ease-in ;
+
+}
+.field:hover #bat{
+    transform: rotate( 25deg);
+    transform-origin: top right;
+
+}
+.field:hover .ball{
+    transform:translate(-20vmax, -20vmax) ;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ball-bat</a></li>
+            <li><a href="animation.html">Animation</a></li>
+        </ul>
+    </nav>
+
+<div class="field">
+    <img id="bat" src="batt.png">
+    <div class="ball"></div>
+</div>    
+</body>
+</html>
